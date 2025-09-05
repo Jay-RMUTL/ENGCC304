@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Flowchart Prime Number" id="prime-flow">
+    <mxGraphModel dx="1050" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Start -->
+        <mxCell id="start" value="เริ่มต้น" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Input -->
+        <mxCell id="input" value="รับค่าจำนวนเต็ม n" style="rounded=0;whiteSpace=wrap;html=1;shape=parallelogram;" vertex="1" parent="1">
+          <mxGeometry x="140" y="120" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- i=n -->
+        <mxCell id="seti" value="กำหนด i = n" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Check i>=2 -->
+        <mxCell id="checki" value="i ≥ 2 ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- End -->
+        <mxCell id="end" value="จบโปรแกรม" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- isPrime=1 -->
+        <mxCell id="isprime" value="กำหนด isPrime = 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="420" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- j=2 -->
+        <mxCell id="setj" value="กำหนด j = 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="520" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- j<=sqrt(i)? -->
+        <mxCell id="checkj" value="j ≤ √i ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="620" width="160" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- i%j==0 -->
+        <mxCell id="checkdiv" value="i % j == 0 ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="740" width="160" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- isPrime=0 -->
+        <mxCell id="setnotprime" value="isPrime = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="760" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- j++ -->
+        <mxCell id="incj" value="เพิ่มค่า j = j+1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="760" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- isPrime==1 -->
+        <mxCell id="checkprime" value="isPrime == 1 ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="920" width="160" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- print i -->
+        <mxCell id="printi" value="แสดงผล i" style="rounded=0;whiteSpace=wrap;html=1;shape=parallelogram;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="940" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- i-- -->
+        <mxCell id="deci" value="ลดค่า i = i-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1080" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Connectors -->
+        <mxCell id="edge1" edge="1" parent="1" source="start" target="input"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="input" target="seti"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="seti" target="checki"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="checki" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="350" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="1" source="checki" target="isprime"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge6" edge="1" parent="1" source="isprime" target="setj"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge7" edge="1" parent="1" source="setj" target="checkj"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge8" edge="1" parent="1" source="checkj" target="checkdiv"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge9" edge="1" parent="1" source="checkdiv" target="setnotprime"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge10" edge="1" parent="1" source="checkdiv" target="incj"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge11" edge="1" parent="1" source="incj" target="checkj"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge12" edge="1" parent="1" source="setnotprime" target="checkprime"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge13" edge="1" parent="1" source="checkj" target="checkprime"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge14" edge="1" parent="1" source="checkprime" target="printi"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge15" edge="1" parent="1" source="printi" target="deci"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge16" edge="1" parent="1" source="checkprime" target="deci"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="edge17" edge="1" parent="1" source="deci" target="checki"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
